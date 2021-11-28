@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "todo": [
+    {
+      "done": true,
+      "id": 1,
+      "description": "helelsdfl"
+    },
+    {
+      "description": "adding new todo",
+      "id": 2,
+      "done": true
+    },
+    {
+      "description": "asdfads",
+      "id": 3,
+      "done": true
+    },
+    {
+      "description": "sfddsf",
+      "id": 4,
+      "done": true
+    }
+  ]
+}

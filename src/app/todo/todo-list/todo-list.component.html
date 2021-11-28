@@ -1,0 +1,27 @@
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Done</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let todo of todos | async">
+      <td>{{ todo.description }}</td>
+      <td>
+        <input type="checkbox" [checked]="todo.done" (change)="toggleDone(todo)">
+      </td>
+      <td>
+        <button (click)="deleteTodo(todo)">Delete</button>
+      </td>
+    </tr>
+</table>
+
+<button [routerLink]="['/todo/add']" routerLinkActive="router-link-active">Add Todo</button>
+
+
+<input type="text" [(ngModel)]="firstname">
+<input type="text" [(ngModel)]="lastname">
+
+Your full name is {{ firstname }} {{ lastname }}

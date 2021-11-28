@@ -1,0 +1,9 @@
+<div>
+  <div *ngIf="header" class='header'>
+    {{header}}
+  </div>
+  <ng-content></ng-content>
+  <div *ngIf="footer" class='footer'>
+    <button (click)="clicked()">{{footer}}</button>
+  </div>
+</div>

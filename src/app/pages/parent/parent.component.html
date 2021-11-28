@@ -1,0 +1,8 @@
+<h1>{{time}}</h1>
+<app-child-one [(time)]="time"></app-child-one>
+<!-- <app-child-two ></app-child-two> -->
+
+<h1 (click)="ts.dec()">{{ts.time$ | async}} from Child two</h1>
+
+
+<input type="text">
